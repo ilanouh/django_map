@@ -4,4 +4,4 @@ from django.db import models
 class History(models.Model):
 	adress = models.CharField(max_length=200)
 	def __unicode__(self):
-		return self.adress	
+		return self.adress

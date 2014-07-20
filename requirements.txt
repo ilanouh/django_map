@@ -1,4 +1,0 @@
-Django==1.6.5
-argparse==1.2.1
-django-suit==0.2.9
-wsgiref==0.1.2

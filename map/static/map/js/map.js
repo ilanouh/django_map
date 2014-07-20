@@ -30,7 +30,8 @@ function calcRoute() {
       time = response.routes[0].legs[0].duration.value;
     }
     else
-      alert("Your route cannot be established");
+      if (end != "")
+        alert("Your route to "+ end +" cannot be established");
   });
 }
 
@@ -43,4 +44,5 @@ function change() {
 window.onload = function () {
 	setInterval(change, 1);
 	initialize();
+  calcRoute();
 }

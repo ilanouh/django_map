@@ -12,11 +12,21 @@
   <body onclick="change();">
     <div id="container">
     <center>
-        <h1 style="color:darkblue"> Where would you like to go ? </h1> <br>
-        <input id="dest" type="text">
-        <button onclick="calcRoute();">Ok</button> <br><br>
-      <div id="map_canvas"></div>
-      <div id="directions_panel"></div>
+      <h1 style="color:darkblue;"> Where would you like to go ? </h1><br>
+      <form method="post">
+        {% csrf_token %}
+        <input id="dest" type="text" name="adress" value="{{ adress }}">
+        <input type="submit" value="Find"><br><br>
+      </form>
     </center>
+      <div id="directions_panel"></div>
+      <div id="map_canvas"></div>
+      <div id="history">
+      <h1>History</h1>
+        {% for history in historic %}
+          {{ history }} <br>
+        {% endfor %}
+        <br>
+      </div>
     </div>
   </body>

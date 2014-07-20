@@ -1,9 +1,30 @@
-#map_canvas {
-	width: 500px;
-	height: 400px;
+#directions_panel {
+	width: 25%;
+	background-color: #DDD;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 5%;
 }
 
-#directions_panel {
-	width: 400px;
-	background-color: #DDD;
+#map_canvas {
+	width: 30%;
+	height: 400px;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 5%;
+}
+
+#history {
+	font-family: "Courier New", Courier, monospace;
+	display: inline-block;
+	vertical-align: top;
+	background-color: gainsboro;
+	width: 15%;
+	text-align: center;
+	color: darkblue;
+	margin-left: 10%
+}
+
+h1 {
+	font-family: "Courier New", Courier, monospace;
 }
