@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html>
+  <head>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="{% static 'map/js/map.js' %}"></script>
+    <link href="{% static 'map/css/map.css' %}" rel="stylesheet">
+  </head>
+  <body onclick="change();">
+    <div id="container">
+    <center>
+        <h1 style="color:darkblue"> Where would you like to go ? </h1> <br>
+        <input id="dest" type="text">
+        <button onclick="calcRoute();">Ok</button> <br><br>
+      <div id="map_canvas"></div>
+      <div id="directions_panel"></div>
+    </center>
+    </div>
+  </body>
